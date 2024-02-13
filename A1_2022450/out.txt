@@ -1,0 +1,16 @@
+Chromosome NC_001133.9: First ORI position: 17149
+Chromosome NC_001134.8: First ORI position: 80
+Chromosome NC_001135.5: First ORI position: 11256
+Chromosome NC_001136.10: First ORI position: 42618
+Chromosome NC_001137.3: First ORI position: 64
+Chromosome NC_001138.5: First ORI position: 27962
+Chromosome NC_001139.9: First ORI position: 2378
+Chromosome NC_001140.6: First ORI position: 245
+Chromosome NC_001141.2: First ORI position: 287
+Chromosome NC_001142.9: First ORI position: 270
+Chromosome NC_001143.9: First ORI position: 15940
+Chromosome NC_001144.5: First ORI position: 283
+Chromosome NC_001145.3: First ORI position: 261
+Chromosome NC_001146.8: First ORI position: 171
+Chromosome NC_001147.5: First ORI position: 35715
+Chromosome NC_001148.4: First ORI position: 80
