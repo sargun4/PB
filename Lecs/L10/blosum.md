@@ -21,9 +21,9 @@ When assessing sequence alignments, a scoring matrix is crucial to determining t
 
 - The log odds ratio measures the ratio of the observed occurrence of an amino acid pair to the expected occurrence, given the background probabilities of each amino acid.
   
-  \[ \text{Log Odds Ratio} = 2 \times \log_2 \left( \frac{P(O)}{P(E)} \right) \]
-
-  Where \( P(O) \) is the probability of observing the pair, and \( P(E) \) is the expected probability.
+    Log Odds Ratio = 2 * log₂(P(O) / P(E))
+ 
+  Where P(O) is the probability of observing the pair, and P(E) is the expected probability.
 
 ## BLOSUM Matrices
 
@@ -37,9 +37,11 @@ When assessing sequence alignments, a scoring matrix is crucial to determining t
 
 ## Calculation Equation for BLOSUM Matrix (Sij)
 
-\[ S_{ij} = \frac{1}{\lambda} \times \log \left( \frac{p_{ij}}{q_i \times q_j} \right) \]
+S_{ij} = (1 / λ) * log(p_{ij} / (q_i * q_j))
 
-Where \( p_{ij} \) is the probability of amino acids \( i \) and \( j \) replacing each other, and \( q_i \) and \( q_j \) are background probabilities. \( \lambda \) is a scaling factor for integer values.
+Where p_{ij} is the probability of amino acids i and j replacing each other, and q_i and q_j are background probabilities. 
+λ is a scaling factor, set such that the matrix contains easily computable integer values.
+
 
 ## Example - BLOSUM62
 
