@@ -12,7 +12,8 @@ and storing it in pdc.fasta file after downloading it.
 # q2- Use BLAST (Basic Local Alignment Search Tool) to compare the 
 # PDC gene sequence across different Saccharomyces cerevisiae strains and identify SNPs
 
-- i performed blast on the sequence that i dowlonaded in q1 which had accno  "MK868028.1" using blast tool on ncbi. then i selected 10 strains for blast analysis which i saved in blast_results.txt -
+- i performed blast  on the sequence that i dowlonaded in q1 which had accno  "MK868028.1" using blast tool on ncbi website. 
+- then i selected 10 strains for blast analysis which i saved in blast_results.txt -
 - the 10 strains which are saved in blast_results.txt are:
 
 Sequences producing significant alignments:
@@ -28,6 +29,17 @@ Saccharomyces cerevisiae strain HB_S_GIMBLETTROAD_14 chromosom... Saccharomyce..
 Saccharomyces cerevisiae strain HB_C_TUKITUKI1_16 chromosome X... Saccharomyce... brewer's yeast  4932       3009   4982  100%  0.0   98.76  1077438    CP008400.1       
 Saccharomyces cerevisiae strain HB_C_TUKITUKI2_10 chromosome X... Saccharomyce... brewer's yeast  4932       3009   4982  100%  0.0   98.76  1077494    CP008383.1       
 Saccharomyces cerevisiae strain WI_S_JASA_5 chromosome XII...     Saccharomyce... brewer's yeast  4932       3009   4982  100%  0.0   98.76  1076962    CP008349.1       
+
+- This section lists the strains from the database that produced significant alignments with the query sequence. It includes details such as the scientific name, common name, taxonomic identifier (Taxid), maximum score, total score, query coverage, E-value, percentage identity, alignment length, and accession number.
+
+
+- then the section 'Alignments' in blast_results.txt file:
+provides alignment details between the query sequence and the matching sequences from the database strains.
+-It includes information such as the sequence ID, length, score, E-value, identities, gaps, and strand.
+The alignment shows the regions between the query sequence and the subject sequence, with '|' representing matching nucleotides, ' ' (empty space) denoting that there is mismatch between the two sequences for the query and the subject and '-' representing that there is gap in either the query or the subject sequence in whichever sequence '-' exists.
+
+
+
 
 
 ### `extract_snps` Function: 
@@ -61,7 +73,8 @@ to extract single nucleotide polymorphisms (SNPs) and subject sequences from a B
 
 ## `translate_dna_to_protein`   
  
-- it takes a DNA sequence as input and sends a POST request to the expasy Translate tool's URL(https://web.expasy.org/cgi-bin/translate/dna2aa.cgi) with the DNA squence and the desired output format ('fasta') as parameters. 
+- it takes a DNA sequence as input and sends a POST request to the expasy Translate tool's URL
+(https://web.expasy.org/cgi-bin/translate/dna2aa.cgi) with the DNA squence and the desired output format ('fasta') as parameters. 
       params = {
               'dna_sequence': dna_sequence,
               'output_format': 'fasta'
@@ -173,7 +186,6 @@ Y: Tyrosine (Tyr)
 
 
 
-
 ## q4
 q4: Performing SIFT Analysis on SNP at Position 233637
 Selecting the SNP
@@ -202,8 +214,6 @@ Submitting Sequences to SIFT: The protein sequences are submitted to the SIFT we
 10. https://www.youtube.com/watch?v=WRKQGwh_Mw0
 11. https://www.liebertpub.com/doi/full/10.1089/gtmb.2010.0036
 12. https://bio.tools/sift
-13. 
-14. 
-15. 
+
 
  
