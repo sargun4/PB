@@ -188,20 +188,22 @@ Y: Tyrosine (Tyr)
 
 ## q4
 q4: Performing SIFT Analysis on SNP at Position 233637
-Selecting the SNP
-The selected SNP is located at position 233637 of the PDC gene. The SNP involves a change from G (guanine) in the query sequence to A (adenine) in the subject sequence.
 
-Steps for SIFT Analysis
-Identifying the SNP: The SNP of interest is identified at position 233637, with a query base of G and a subject base of A.
+- i selected the SNP located at position 233637 of the PDC gene. 
+The SNP involves a change from G (guanine) in the query sequence to A (adenine) in the subject sequence.
 
-Retrieving Protein Sequences: We need to obtain the normal and SNP-containing protein sequences corresponding to the SNP position. These sequences will be used for SIFT analysis.
+- then, we need to obtain the normal and SNP-containing protein sequences corresponding to the SNP position. These sequences will be used for SIFT analysis.
 
-Submitting Sequences to SIFT: The protein sequences are submitted to the SIFT web server for analysis. This involves formatting the sequences properly and sending them to the SIFT server for prediction.
+- finally-The protein sequences are submitted to the SIFT web server for analysis. This involves formatting the sequences properly and sending them to the SIFT server for prediction.
  
+## functgion- 'run_sift_analysis' 
+- to perform SIFT analysis on the normal and SNP-containing sequences.
+- i sent POST requests to the SIFT web server with the normal and SNP-containing sequences as parameters.
+- Then i hv printed SIFT results for both the normal and SNP-containing sequences.
+- We extract the normal and SNP-containing sequences around the SNP position.
 
 
 # References
-
 1. https://www.ncbi.nlm.nih.gov/nuccore/1774854476
 2. https://blast.ncbi.nlm.nih.gov/Blast.cgi
 3. https://blast.ncbi.nlm.nih.gov/Blast.cgi
